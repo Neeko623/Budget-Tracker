@@ -1,16 +1,17 @@
 const FILES_TO_CACHE = [
     "/",
-    "public/index.html",
-    "public/js/index.js",
-    "public/css/styles.css",
-    "public/icons/icon-72x72.png",
-    "public/icons/icon-96x96.png",
-    "public/icons/icon-128x128.png",
-    "public/icons/icon-144x144.png",
-    "public/icons/icon-152x152.png",
-    "public/icons/icon-192x192.png",
-    "public/icons/icon-384x384.png",
-    "public/icons/icon-512x512.png",
+    "/index.html",
+    "/index.js",
+    "/manifest.json",
+    "/styles.css",
+    // "public/icons/icon-72x72.png",
+    // "public/icons/icon-96x96.png",
+    // "public/icons/icon-128x128.png",
+    // "public/icons/icon-144x144.png",
+    // "public/icons/icon-152x152.png",
+    // "public/icons/icon-192x192.png",
+    // "public/icons/icon-384x384.png",
+    // "public/icons/icon-512x512.png",
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -33,7 +34,7 @@ self.addEventListener("activate", function (evt) {
             return Promise.all(
                 keyList.map(key => {
                     if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-                        console.log("Removing old cache data", key);
+                        console.log("Clean All Data!", key);
                         return caches.delete(key);
                     }
                 })
