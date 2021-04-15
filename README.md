@@ -7,8 +7,9 @@ Using Progressive Web Application (PWA) this application enables the user to add
 [Budget Tracker]()
 
 ### Technologies
-Node.js
-Express
+HTML
+CSS
+EXPRESS
 MongoDB
 Mongoose
 IndexedDB
@@ -17,6 +18,11 @@ IndexedDB
 
 To install the required dependencies, run npm install.
 To start the server, run npm start. 
+
+### Functionality
+Enter deposits offline
+Enter expenses offline
+Offline entries should be added to tracker.
 
 ## Questions
 Contact email: NEEKO_TVXQ@HOTMAIL.COM
