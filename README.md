@@ -5,7 +5,7 @@
 Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online connection. When entering transactions offline, data should populate the total when connected back online.
 
 Heroku: [Budget Tracker](https://budgettracker2021.herokuapp.com/)
-![Screenshot](BudgetTracker.png)
+![Screenshot](Budget-Tracker.png)
 
 ### Technologies
 - HTML
